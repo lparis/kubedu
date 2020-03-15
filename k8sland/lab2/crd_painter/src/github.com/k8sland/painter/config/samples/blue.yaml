@@ -1,0 +1,8 @@
+apiVersion: workload.k8sland.io/v1alpha1
+kind:       Painter
+metadata:
+  labels:
+    controller-tools.k8s.io: "1.0"
+  name: blue
+spec:
+  color: Blue

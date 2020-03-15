@@ -1,0 +1,9 @@
+apiVersion: workload.k8sland.io/v1alpha1
+kind:       Painter
+metadata:
+  namespace: fred
+  labels:
+    controller-tools.k8s.io: "1.0"
+  name: green
+spec:
+  color: Green

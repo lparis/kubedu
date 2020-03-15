@@ -1,0 +1,48 @@
+kind:       Deployment
+apiVersion: apps/v1
+metadata:
+  name: hangman
+  labels:
+    app: hangman
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: hangman
+  template:
+    metadata:
+      labels:
+        app: hangman
+    spec:
+      containers:
+      - name:            hangman
+        image:           k8sland/go-hangman-svc:0.0.1
+        imagePullPolicy: IfNotPresent
+        args:            ["/app/hangman", "-d", "dictionary:4000"]
+        resources:
+          requests:
+            cpu:    100m
+            memory: 4Mi
+          limits:
+            cpu:    200m
+            memory: 8Mi
+        ports:
+        - name:          http
+          containerPort: 5000
+
+---
+kind:       Service
+apiVersion: v1
+metadata:
+  name: hangman
+  labels:
+    app: hangman
+spec:
+  type: NodePort
+  selector:
+    app: hangman
+  ports:
+    - name:       http
+      protocol:   TCP
+      nodePort:   30500
+      port:       5000

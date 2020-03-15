@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind:       Deployment
+metadata:
+  name: grim
+  labels:
+    !!CHANGE_ME!!
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: grim
+  template:
+    metadata:
+      labels:
+        app: grim
+    spec:
+      containers:
+      - name:            nginx
+        image:           nginx
+        imagePullPolicy: IfNotPresent
+        ports:
+        - name:          http
+          protocol:      TCP
+          containerPort: 80

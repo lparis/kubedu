@@ -1,0 +1,7 @@
+apiVersion: extensions/v1beta1
+kind:       Ingress
+metadata:
+  name: hangman
+spec:
+  # Using named hosting, set up traffic to hit either hangman v1 or v2
+  <<!YOUR_CODE!>>
