@@ -1,0 +1,48 @@
+---
+apiVersion: v1
+kind:       ServiceAccount
+metadata:
+  name:      partysched
+  namespace: default
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind:       ClusterRoleBinding
+metadata:
+  name: partysched
+subjects:
+- kind:      ServiceAccount
+  name:      partysched
+  namespace: default
+roleRef:
+  kind:     ClusterRole
+  name:     system:kube-scheduler
+  apiGroup: rbac.authorization.k8s.io
+---
+apiVersion: apps/v1
+kind:       Deployment
+metadata:
+  name:      partysched
+  namespace: default
+  labels:
+    component: scheduler
+    tier:      control-plane
+spec:
+  selector:
+    matchLabels:
+      component: scheduler
+      tier:      control-plane
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        component: scheduler
+        tier:      control-plane
+    spec:
+      serviceAccountName: partysched
+      containers:
+        - name:  partysched
+          image: k8sland/go-partysched:0.0.1
+          imagePullPolicy: IfNotPresent
+          resources:
+            requests:
+              cpu: '0.1'

@@ -1,0 +1,15 @@
+apiVersion: cilium.io/v2
+kind:       CiliumNetworkPolicy
+metadata:
+  name: enterormelt
+spec:
+  endpointSelector:
+    matchLabels:
+      CHANGE_ME!
+  ingress:
+  - fromEndpoints:
+    - matchLabels:
+        CHANGE_ME!
+  - fromEndpoints:
+    - matchLabels:
+        CHANGE_ME!

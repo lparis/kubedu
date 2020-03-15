@@ -1,0 +1,48 @@
+---
+kind:       Deployment
+apiVersion: apps/v1
+metadata:
+  name: nightking
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      org:  g.o.t
+      clan: nightking
+  template:
+    metadata:
+      labels:
+        org:  g.o.t
+        clan: nightking
+    spec:
+      containers:
+      - name:            nightking
+        image:           k8sland/nightking-svc-go:0.0.1
+        imagePullPolicy: IfNotPresent
+        args:            ["/app/nightking", "--url", "castleblack:4000"]
+        resources:
+          requests:
+            cpu:    100m
+            memory: 25Mi
+          limits:
+            cpu:    200m
+            memory: 50Mi
+        ports:
+        - name:          http
+          containerPort: 4006
+
+---
+kind:       Service
+apiVersion: v1
+metadata:
+  name: nightking
+spec:
+  type: NodePort
+  selector:
+    org:  g.o.t
+    clan: nightking
+  ports:
+    - name:       http
+      protocol:   TCP
+      nodePort:   30502
+      port:       4006

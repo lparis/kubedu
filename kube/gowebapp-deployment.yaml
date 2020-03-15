@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata: 
+  name: gowebapp
+  labels:
+    run: gowebapp
+    tier: frontend
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      run: gowebapp
+      tier: frontend
+  template:
+    metadata:
+      labels:
+        run: gowebapp
+        tier: frontend
+    spec:
+      containers:
+      - name: gowebapp
+        env:
+        - name: MYSQL_ROOT_PASSWORD
+          value: heptio
+        image: localhost:5000/gowebapp:v1       
+        ports:
+        - containerPort: 80

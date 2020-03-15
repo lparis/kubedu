@@ -1,0 +1,21 @@
+apiVersion: admissionregistration.k8s.io/v1beta1
+kind:       ValidatingWebhookConfiguration
+metadata:
+  name: depadm
+webhooks:
+- name: !!CHANGE_ME!!
+  rules:
+  - apiGroups:
+    - "apps"
+    apiVersions:
+    - v1
+    operations:
+    - CREATE
+    resources:
+    - deployments
+  failurePolicy: Fail
+  clientConfig:
+    service:
+      name:      depadm
+      namespace: default
+    caBundle: !!CHANGE_ME!!

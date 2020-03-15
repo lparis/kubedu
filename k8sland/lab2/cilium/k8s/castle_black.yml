@@ -1,0 +1,48 @@
+---
+kind:       Deployment
+apiVersion: apps/v1
+metadata:
+  name: castleblack
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      org:    g.o.t
+      castle: castleblack
+  template:
+    metadata:
+      labels:
+        org:    g.o.t
+        castle: castleblack
+    spec:
+      containers:
+      - name:            castle
+        image:           k8sland/castle-svc-go:0.0.2
+        imagePullPolicy: IfNotPresent
+        args:            ["/app/castle"]
+        resources:
+          requests:
+            cpu:    100m
+            memory: 25Mi
+          limits:
+            cpu:    200m
+            memory: 50Mi
+        ports:
+        - name:          http
+          containerPort: 4000
+
+---
+kind:       Service
+apiVersion: v1
+metadata:
+  name: castleblack
+spec:
+  type: NodePort
+  selector:
+    org:    g.o.t
+    castle: castleblack
+  ports:
+    - name:       http
+      protocol:   TCP
+      nodePort:   30500
+      port:       4000

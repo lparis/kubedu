@@ -1,0 +1,47 @@
+---
+kind:       Deployment
+apiVersion: apps/v1
+metadata:
+  name: knight
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      org:  g.o.t
+      clan: knight
+  template:
+    metadata:
+      labels:
+        org:  g.o.t
+        clan: knight
+    spec:
+      containers:
+      - name:            knight
+        image:           k8sland/ot-knight-svc-go:0.0.1
+        imagePullPolicy: IfNotPresent
+        args:            ["/app/knight", "-j", "jaeger:6831", "-c", "castle:4000"]
+        resources:
+          requests:
+            cpu:    100m
+            memory: 25Mi
+          limits:
+            cpu:    200m
+            memory: 50Mi
+        ports:
+        - name:          http
+          containerPort: 4005
+---
+kind:       Service
+apiVersion: v1
+metadata:
+  name: knight
+spec:
+  type: NodePort
+  selector:
+    org:  g.o.t
+    clan: knight
+  ports:
+    - name:       http
+      protocol:   TCP
+      nodePort:   30501
+      port:       4005

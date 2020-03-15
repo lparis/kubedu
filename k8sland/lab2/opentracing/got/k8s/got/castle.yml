@@ -1,0 +1,48 @@
+---
+kind:       Deployment
+apiVersion: apps/v1
+metadata:
+  name: castle
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      org:  g.o.t
+      role: castle
+  template:
+    metadata:
+      labels:
+        org:  g.o.t
+        role: castle
+    spec:
+      containers:
+      - name:            castle
+        image:           k8sland/ot-castle-svc-go:0.0.1
+        imagePullPolicy: IfNotPresent
+        args:            ["/app/castle", "-j", "jaeger:6831"]
+        resources:
+          requests:
+            cpu:    100m
+            memory: 25Mi
+          limits:
+            cpu:    200m
+            memory: 50Mi
+        ports:
+        - name:          http
+          containerPort: 4000
+
+---
+kind:       Service
+apiVersion: v1
+metadata:
+  name: castle
+spec:
+  type: NodePort
+  selector:
+    org:  g.o.t
+    role: castle
+  ports:
+    - name:       http
+      protocol:   TCP
+      nodePort:   30500
+      port:       4000
