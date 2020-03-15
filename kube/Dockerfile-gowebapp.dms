@@ -1,0 +1,12 @@
+FROM ubuntu
+
+LABEL maintainer "education@heptio.com"
+LABEL version "1.0"
+
+COPY ./code /opt/gowebapp
+COPY ./config /opt/gowebapp/config
+
+EXPOSE 80
+
+WORKDIR /opt/gowebapp/
+ENTRYPOINT ["/opt/gowebapp/gowebapp"]

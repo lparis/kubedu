@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata: 
+  name: gowebapp-mysql
+  labels:
+    run: gowebapp-mysql
+    tier: backend
+spec:
+  replicas: 1
+  strategy: 
+    type: Recreate
+  selector:
+    matchLabels:
+      run: gowebapp-mysql
+      tier: backend
+  template:
+    metadata:
+      labels:
+        run: gowebapp-mysql
+        tier: backend
+    spec:
+      containers:
+      - name: gowebapp-mysql
+        env:
+        - name: MYSQL_ROOT_PASSWORD
+          value: heptio
+        image: localhost:5000/gowebapp-mysql:v1
+        ports:
+        - containerPort: 3306
