@@ -25,9 +25,3 @@ sudo mv ./kubectl /usr/local/bin/kubectl
 
 kubectl version --client
 
-7. Verify Kubernetes is up and running.
-
-kubectl cluster-info
-
-If you see a URL response, kubectl is correctly configured to access your cluster.
-
