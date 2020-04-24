@@ -1,0 +1,500 @@
+  235  ls
+  236  cd docs-vmware-harbor
+  237  ls
+  238  git branch
+  239  git remote -v
+  240  git branch -a
+  241  git fetch -all
+  242  git fetch --all
+  243  git branch -a
+  244  git branch
+  245  git branch -D install-updates
+  246  git status
+  247  git branch
+  248  git pull upstream master
+  249  git branch
+  250  git status
+  251  git pull upstream master
+  252  git branch -a
+  253  git checkout harbor-resources-ss
+  254  git branch
+  255  git checkout master
+  256  git pull upstream master
+  257  git checkout -b clair-no-proxy-issue
+  258  git status
+  259  git checkout -- .DS_Store
+  260  git checkout .DS_Store
+  261  git add docs-content/installing.html.md.erb
+  262  git status
+  263  git commit -a -m "Address Issue #34"
+  264  git config --global user.name "lparis"
+  265  git config --global user.email lparis@vmware.com
+  266  git commit --amend --reset-author
+  267  git status
+  268  git branch
+  269  git push origin clair-no-proxy-issue
+  270  git push origin clair-no-proxy-issue
+  271  git push origin clair-no-proxy-issue
+  272  la -al ~/.ssh
+  273  ls -al ~/.ssh
+  274  git branch
+  275  git checkout master
+  276  git pull upstream master
+  277  git checkout clair-no-proxy-issue
+  278  git push origin clair-no-proxy-issue
+  279  ssh-add -K ~/.ssh/id_rsa
+  280  git status
+  281  git push origin clair-no-proxy-issue
+  282  cd workspace
+  283  ls
+  284  cd github
+  285  ls
+  286  cd pivotal-cf
+  287  ls
+  288  cd docs-vmware-harbor
+  289  git remote -v
+  290  git remote set-url origin git@github.com:lparis/docs-vmware-harbor.git
+  291  git remote -v
+  292  git push origin clair-no-proxy-issue
+  293  git status
+  294  git add docs-content/installing.html.md.erb
+  295  git commit -a -m "Edit"
+  296  git push origin clair-no-proxy-error
+  297  git push origin clair-no-proxy-issue
+  298  cd ..
+  299  pwd
+  300  brew -v
+  301  ruby -v
+  302  bookbinder -v
+  303  bookbinder -version
+  304  bookbinder version
+  305  bookbindery version
+  306  gem install bunlder
+  307  brew install chruby
+  308  brew install git bash-completion
+  309  cd ~
+  310  vi bash_profile
+  311  vi bash_profile
+  312  cat bash_profile
+  313  brew install chruby
+  314  vi .bashrc
+  315  cat .bashrc
+  316  cat bash_profile
+  317  chruby ruby-2.3.0
+  318  brew install chruby
+  319  ls
+  320  ch
+  321  chruby ruby-2.3.0
+  322  cd workspace/lparis
+  323  cd workspace
+  324  ls
+  325  cd github
+  326  ls
+  327  cd pivotal-cf
+  328  ls
+  329  cd docs-nsx-t
+  330  ls
+  331  cd docs-book
+  332  ls
+  333  pwd
+  334  bundle install
+  335  gem install puma -v '3.11.0' --source 'https://rubygems.org/'
+  336  ls -l
+  337  cd ~
+  338  ls -l
+  339  ls
+  340  cd Library
+  341  ls
+  342  cd ~
+  343  cd /
+  344  ls
+  345  cd Library
+  346  ls
+  347  cd Robu
+  348  cd Ruby
+  349  ls -l
+  350  ls
+  351  cd Gems
+  352  ls
+  353  ls -l
+  354  chmod 755 2.3.0
+  355  ls -l
+  356  cd ~
+  357  cd workspace/github
+  358  ls
+  359  cd pivotal-cf
+  360  ls
+  361  cd docs-nsx-t
+  362  ls
+  363  cd docs-book
+  364  ls
+  365  bundle install
+  366  bundle update && bundle install
+  367  gem install puma
+  368  gem install puma -v 3.12.0 -- --with-opt-dir=/usr/local/opt/openssl
+  369  bundle config build.puma --with-opt-dir=/usr/local/opt/openssl
+  370  bundle config build.puma --with-opt-dir=/usr/local/opt/openssl
+  371  bundle update && bundle install
+  372  cd workspac/github/pivotal-cf/docs-nsx-t
+  373  cd worksapce/github
+  374  ls
+  375  cd workspace
+  376  ls
+  377  cd github
+  378  ls
+  379  cd pivotal-cf
+  380  ls
+  381  cd docs-nsxt-t
+  382  cd docs-nsx-t
+  383  l
+  384  ls
+  385  cd docs-book
+  386  ls
+  387  bundle install
+  388  `gem install puma -v '3.12.0' --source 'https://rubygems.org/'`
+  389  sudo `gem install puma -v '3.12.0' --source 'https://rubygems.org/'`
+  390  sudo `gem install puma -v '3.12.0'
+  391  sudo gem install puma
+  392  bundle install
+  393  which ruby
+  394  which puma
+  395  which brew
+  396  cd ~/workspace
+  397  ls
+  398  pwd
+  399  /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  400  brew help
+  401  which brew
+  402  brew install ruby
+  403  brew upgrade ruby
+  404  which ruby
+  405  'export PATH="/usr/local/opt/ruby/bin:$PATH"' >> ~/.bash_profile
+  406  echo 'export PATH="/usr/local/opt/ruby/bin:$PATH"' >> ~/.bash_profile
+  407  echo 'export LDFLAGS="-L/usr/local/opt/ruby/lib"' >> ~/.bash_profile
+  408  echo 'export CPPFLAGS="-I/usr/local/opt/ruby/include"' >> ~/.bash_profile
+  409  echo 'export PKG_CONFIG_PATH="/usr/local/opt/ruby/lib/pkgconfig"' >> ~/.bash_profile
+  410  cat ~/.bash_profile
+  411  which rpuby
+  412  which ruby
+  413  which ruby
+  414  brew install ruby
+  415  which brew
+  416  brew install chruby
+  417  cat ~/.bashrc
+  418  which chruby
+  419  which ruby
+  420  brew install ruby-install
+  421  ruby-install ruby 2.3.0
+  422  chruby ruby-2.3.0
+  423  brew install chruby
+  424  brew reinstall chruby
+  425  chruby ruby-2.3.0
+  426  cd workspace/github
+  427  ls
+  428  cd pivotal-cf
+  429  ls
+  430  cd docs-nsx-t
+  431  ls
+  432  cd docs-book
+  433  ls
+  434  cd ..
+  435  git branch
+  436  ls
+  437  cd ..
+  438  ls
+  439  cd docs-pks
+  440  ls
+  441  git branch
+  442  ls
+  443  git branch
+  444  git checkout master
+  445  git branch
+  446  git checkout upstream/installing-pks-nsxt-refactor
+  447  git branch
+  448  git pull upstream/installing-pks-nsxt-refactor
+  449  git fetch upstream/installing-pks-nsxt-refactor
+  450  git chckout master
+  451  git branch
+  452  git checkout master
+  453  git fetch upstream/installing-pks-nsxt-refactor
+  454  git fetch --all
+  455  git checkout upstream/installing-pks-nsxt-refactor
+  456  git status
+  457  git checkout master
+  458  git fetch 
+  459  git checkout upstream/installing-pks-nsxt-refactor
+  460  git checkout master
+  461  git status
+  462  git branch
+  463  git pull upstream master
+  464  git fetch --all
+  465  git checkout upstream/installing-pks-nsxt-refactor
+  466  git checkout master
+  467  git fetch 
+  468  git checkout upstream/installing-pks-nsxt-refactor
+  469  git fetch --all
+  470  git branch
+  471  git checkout master
+  472  git branch
+  473  git branch
+  474  git fetch --all
+  475  git branch -a
+  476  git branch
+  477  git checkout origin/installing-pks-nsxt-refactor
+  478  brew info
+  479  brew install kubectl
+  480  kubectl version
+  481   curl -LO https://storage.googleapis.com/minikube/releases/latest/docker-machine-driver-hyperkit  && chmod +x docker-machine-driver-hyperkit  && sudo mv docker-machine-driver-hyperkit /usr/local/bin/  && sudo chown root:wheel /usr/local/bin/docker-machine-driver-hyperkit  && sudo chmod u+s /usr/local/bin/docker-machine-driver-hyperkit
+  482  brew cask install minikube
+  483  minikube version
+  484  minikube start --cpus 4 --memory 8192 --vm-driver hyperkit    --kubernetes-version=v1.12.1
+  485  minikube start --cpus 4 --memory 8192 --vm-driver hyperkit --kubernetes-version=v1.12.1
+  486  minikube version
+  487  minikube start --cpus 4 --memory 8192 --vm-driver hyperkit --kubernetes-version=v1.12.1
+  488  brew install git && brew install go --cross-compile-common
+  489  brew upgrade git
+  490  brew install git && brew install go --cross-compile-common
+  491  mkdir -p ~/k8sland/bin
+  492  export GOBIN=~/k8sland/bin
+  493  export PATH=$PATH:$GOBIN
+  494  minikube version
+  495  minikube start --cpus 4 --memory 8192 --vm-driver hyperkit    --kubernetes-version=v1.12.1
+  496  ls
+  497  minikube status
+  498  kubectl get nodes
+  499  minikube status
+  500  brew install postgresql
+  501  psql -v
+  502  psql -V
+  503  brew install httpie
+  504  http google.com
+  505  brew install watch
+  506  watch --help
+  507  go env
+  508  minikube addons list
+  509  minikube addons list
+  510  minikube addons list
+  511  minikube addons enable metrics-server
+  512  kubctl get nodes
+  513  kubectl get nodes
+  514  kubectl help
+  515  kubectl create help
+  516  kubectl help
+  517  kubectl help
+  518  kubectl help
+  519  ls
+  520  cd k8sland
+  521  ls
+  522  cd lab2
+  523  ls
+  524  kubectl apply --f iconflix-services.yml
+  525  kubectl apply -f iconflix-services.yml
+  526  ls
+  527  cd resources
+  528  ls
+  529  kubectl apply -f iconflix-services.yml
+  530  kubectl help
+  531  kubectl get resources
+  532  kubectl get resource
+  533  kubectl get help
+  534  kubectl help get
+  535  kubectl get resource iconflix
+  536  kubectl get iconflix
+  537  kubectl get pods
+  538  kubectl top nodes
+  539  minikube addons list
+  540  minikube addons enable metrics-server
+  541  minikube start --cpus 4 --memory 8192 --vm-driver hyperkit    --kubernetes-version=v1.12.1
+  542  minikube delete
+  543  minikube start --cpus 4 --memory 8192 --vm-driver hyperkit    --kubernetes-version=v1.12.1
+  544  minikube addons list
+  545  minikube addons enable metrics-server
+  546  minikube addons enable heapster
+  547  kubektl describe no node1
+  548  kubectl describe no node1
+  549  kubectl apply -f iconflix-services.yml
+  550  kubectl describe no node1
+  551  kubectl top node
+  552  kubectl top pod
+  553  kubectl top po
+  554  minikube dashboard
+  555  kubectl get events
+  556  ls
+  557  ./burst.sh
+  558  watch kubectl top pod
+  559  watch kubectl top po
+  560  watch kubectl top no
+  561  watch kubectl top po
+  562  kubectl get po
+  563  kubectl apply -f iconflix-services.yml
+  564  vi iconflix-services.yml
+  565  kubectl get deploy
+  566  kubectl delete -f iconflix-services.yml
+  567  kubectl apply -f iconflix-services.yml
+  568  kubectl apply -f iconflix-services.yml
+  569  kubectl apply -f iconflix-services.yml
+  570* 
+  571  watch kubectl top po
+  572  kubectl get deploy
+  573  kubectl help
+  574  kubectl get deploy
+  575  kubectl delete inconflix
+  576  kubectl delete resource inconflix
+  577  kubectl delete pod inconflix
+  578  kubectl delete pods inconflix
+  579  kubectl get deploy
+  580  ls
+  581  kubectl delete iconflix-services.yml
+  582  kubectl delete -f iconflix-services.yml
+  583  vi iconflix-services.yml
+  584  kubectl apply -f probes.yml
+  585  cd ..
+  586  ls
+  587  cd proces
+  588  cd probes
+  589  ls
+  590  kubectl apply -f probes.yml
+  591  kubectl apply -f probes.yml
+  592  kubectl apply -f probes.yml
+  593  kubectl apply -f probes.yml
+  594  kubectl get deploy
+  595  kubectl get ep -watch
+  596  kubectl get ep --watch
+  597  kubectl delete -f probes..yml
+  598  kubectl delete -f probes.yml
+  599  cd ..
+  600  ls
+  601  cd statefulset
+  602  ls
+  603  kubectl apply -f statefulsets-examples.yml
+  604  ls
+  605  kubectl apply -f statefulsets-example.yml
+  606  kubectl apply -f statefulsets-example.yml
+  607  kubectl apply -f statefulsets-example.yml
+  608  kubectl apply -f statefulsets-example.yml
+  609  kubectl apply -f statefulsets-example.yml
+  610  kubectl get deploy
+  611  kubectl delete -f statefulsets-example.yml
+  612  kubectl apply -f statefulsets-example.yml
+  613  kubectl get pods
+  614  kubectl get pods
+  615  kubectl get clusterroles
+  616  kubectl get roles
+  617  ku
+  618  ls
+  619  cd ..
+  620  ls
+  621  cd rbac
+  622  ls
+  623  cd k8s
+  624  ls
+  625  kubectl apply -f proxy.yml
+  626  cat proxy.yml
+  627  cat proxy.yml
+  628  cat proxy.yml
+  629  cat proxy.yml
+  630  kubectl apply -f proxy.yml
+  631  cat proxy.yml
+  632  kubectl apply -f proxy.yml
+  633  kubectl get pods
+  634  kubectl get clusterroles
+  635  kubectl get roles
+  636  ku
+  637  ku
+  638  kubectl get pods
+  639  kubectl get pod apiproxy-5c7c97678-pb91c
+  640  kubectl get pods apiproxy-5c7c97678-pb9lc
+  641  ls
+  642  cat rbac.yml
+  643  kubectl cluster-info
+  644  minikube dashboard
+  645  ls
+  646  pwd
+  647  kubectl delete -f proxy.yml
+  648  kubectl apply -f proxy2.yml
+  649  kubectl get pods
+  650  http: minikube 30404/v1/pods 
+  651*  
+  652  kubectl get pods
+  653  kubectl get pods
+  654  go env
+  655  go version
+  656  ---
+  657  # ServiceAccount...
+  658  apiVersion: v1
+  659  kind:       ServiceAccount
+  660  metadata:
+  661    name:      apiproxy
+  662    namespace: default
+  663  ---
+  664  # Deployment
+  665  kind:       Deployment
+  666  apiVersion: apps/v1
+  667  metadata:
+  668    name: apiproxy
+  669    labels:
+  670      app: apiproxy
+  671  spec:
+  672    replicas: 1
+  673    selector:
+  674      matchLabels:
+  675        app: apiproxy
+  676    template:
+  677      metadata:
+  678        labels:
+  679          app: apiproxy
+  680      spec:
+  681        serviceAccountName: apiproxy
+  682        containers:
+  683        - name:            apiproxy
+  684          image:           k8sland/go-api-proxy:0.0.1
+  685          imagePullPolicy: IfNotPresent
+  686          args:            ["/app/apiproxy"]
+  687          resources:
+  688            requests:
+  689              cpu:    100m
+  690              memory: 25Mi
+  691            limits:
+  692              cpu:    200m
+  693              memory: 50Mi
+  694          readinessProbe:
+  695            httpGet:
+  696              path: /v1/healthz
+  697              port: http
+  698            initialDelaySeconds: 5
+  699            periodSeconds:       5
+  700          livenessProbe:
+  701            httpGet:
+  702              path: /v1/healthz
+  703              port: http
+  704            initialDelaySeconds: 5
+  705            periodSeconds:       5
+  706          ports:
+  707          - name:          http
+  708            containerPort: 4004
+  709  ---
+  710  kind:       Service
+  711  apiVersion: v1
+  712  metadata:
+  713    name: apiproxy
+  714    labels:
+  715      app: apiproxy
+  716  spec:
+  717    type: NodePort
+  718    selector:
+  719      app: apiproxy
+  720    ports:
+  721      - name:     http
+  722        protocol: TCP
+  723        nodePort: 30404
+  724        port:     4004
+  725  export KB_ARCH=amd64
+  726  export KB_REV=1.0.4
+  727  cd downloads
+  728  cd ~/downloads
+  729  ls
+  730   curl -LO https://github.com/kubernetes-sigs/kubebuilder/releases/download/v${KB_REV}/kubebuilder_${KB_REV}_darwin_${KB_ARCH}.tar.gz
+  731  tar -zxvf ~/Downloads/kubebuilder_${KB_REV}_darwin_${KB_ARCH}.tar.gz &&    sudo mv kubebuilder_${KB_REV}_darwin_${KB_ARCH} /usr/local/kubebuilder
+  732  ls
+  733  history
+  734  history > history.txt
